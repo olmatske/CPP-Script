@@ -25,7 +25,7 @@ sleep 2
 
 rm -rf *.cpp *.hpp
 
-sleep 1
+sleep 3
 
 cd ..
 
@@ -36,3 +36,4 @@ rm -rf $directory
 # 	echo "${classes[count]}"
 # 	(( count++ ))
 # done
+
