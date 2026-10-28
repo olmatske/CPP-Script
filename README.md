@@ -35,5 +35,10 @@
 
 ## Useful knowledge
 
+_coming soon..._
 
+
+## Resources that helped me
+
+_coming soon..._
 
