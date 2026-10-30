@@ -18,12 +18,14 @@ count=1
 while ((count <= amount)); do
 	touch ${classes[count]}.cpp
 	touch ${classes[count]}.hpp
+	touch main.cpp
+	touch Makefile
 	(( count ++ ))
 done
 
 sleep 2
 
-rm -rf *.cpp *.hpp
+rm -rf *.cpp *.hpp main.cpp Makefile
 
 sleep 3
 
