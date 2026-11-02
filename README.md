@@ -1,9 +1,9 @@
-<!--************************************************************************** */
+<!--************************************************************************* */
 /*              ／＞　 フ                        ˚★ ₊ ⊹　  ࣪˖ ࣪ ࣪ ˖⋆˚★ ₊ ⊹　  ࣪˖ ࣪ ₊  ࣪ ˖*/
-/*             | 　_　_|                             ˖ ࣪　⊹ ࣪ ★⊹ ࣪ ┆ ˖ ࣪　⊹ ࣪ ★ ⋆.˚  ⊹ ࣪*/
+/*             | 　_　_|                              ˖ ࣪　⊹ ࣪ ★⊹ ࣪ ┆ ˖ ࣪　⊹ ࣪ ★ ⋆.˚  ⊹ ࣪*/
 /*            ／` ミ＿xノ                                    ࣪ ˖⋆˚★ ₊ ⊹　  ࣪˖ ࣪ ₊  ࣪ ˖*/
 /*           /　　　　 |                                    ˖⋆˚★ ₊ ⊹　  ࣪˖ ࣪ ₊  ࣪ ˖　*/
-/*          /　 ヽ　　 ﾉ           へ   ╱|、 ♡  ╱|、        ☆⊹ ࣪ ┆ ˖ ࣪　⊹ ࣪ ★ .˚  ⊹ */
+/*          /　 ヽ　　 ﾉ           へ   ╱|、 ♡   ╱|、        ☆⊹ ࣪ ┆ ˖ ࣪　⊹ ࣪ ★ .˚  ⊹ */
 /*          │　　|　|　|       ૮ - ՛ ) (˚ˎ 。7  (` -  7           ˚★ ₊ ⊹　  ࣪˖ ࣪ ₊ */
 /*      ／￣ 　　 |　|　|       /  ⁻៸|  |、 ˜(    |、⁻(           ★ ₊ ⊹　  ࣪˖ ࣪ ࣪ ˖⋆ */
 /*      ( ( ヽ＿_ヽ_)__)   乀 (ˍ, ل ل  じしˍ,)ノ じしˍ,)ノ         　⊹ ࣪ ★ ⋆.˚    */
@@ -26,9 +26,9 @@ _coming soon..._
 	- [X] ask and create .cpp and .hpp files
 	- [X] create main.cpp
 	- [X] create Makefile
-- [ ] header (with cats) in all files
-- [ ] standard libraries in .hpp files
-- [ ] ANSI colors in .hpp file(s)
+- [X] header (with cats) in all files
+- [X] standard libraries in .hpp files
+- [ ] ANSI colors in main.cpp
 - [ ] create Makefile template
 	- [ ] take the Class names and write them as sources
 	- [ ] ask and input executable
@@ -58,13 +58,13 @@ _coming soon..._
 
 - `echo` is specifically for printing but `echo -e` acknowledges _escape sequences_ aka backslashes followed by a flag, such as `\n` for newline or `\t` for tab
 
-	`echo "It's Britney bitch" | cat -e`
+	`echo "Creeper Aww Man" | cat -e`
 
-		It's Britney bitch$
+		Creeper Aww Man$
 
-	`echo -e "It's Britney bitch \n" | cat -e`
+	`echo -e "Creeper Aww Man \n" | cat -e`
 
-		It's Britney bitch$
+		Creeper Aww Man$
 		$
 
 
