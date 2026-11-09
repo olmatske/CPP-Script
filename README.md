@@ -12,7 +12,7 @@
 
 # 👾 Zsh Scripting 👾
 
-In this directory I'm scripting my first zsh script and documenting my journey in this Markdown file. It's mainly for the C++ Projects of my school, namely the CPP Modules. This also works for Python Modules, alltough I recommend for both Curriculums to first go through the pain of making the directories, creating the files, writing classes and their headers etc by hand until you are truly and utterly sick of it.
+In this directory I'm scripting my first zsh script and documenting my journey in this Markdown file. It's mainly for the C++ Projects of my school, namely the CPP Modules. This also works for Python Modules if you tweak a couple of things, alltough I recommend for both Curriculums to first go through the pain of making the directories, creating the files, writing classes and their headers etc by hand until you are truly and utterly sick of it.
 
 ## 🌱 How to use the script
 
