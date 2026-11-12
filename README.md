@@ -28,10 +28,11 @@ _coming soon..._
 	- [X] create Makefile
 - [X] header (with cats) in all files
 - [X] standard libraries in .hpp files
-- [ ] ANSI colors in main.cpp
-- [ ] create Makefile template
-	- [ ] take the Class names and write them as sources
-	- [ ] ask and input executable
+- [X] ANSI colors in Color.cpp
+- [X] create Makefile template
+	- [X] take the Class names and write them as sources
+	- [X] ask and input executable
+- [X] Class template in .cpp and .hpp class files
 
 ### ./cpydir
 
