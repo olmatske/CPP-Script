@@ -62,8 +62,8 @@ _coming soon..._
 ### ./cpydir
 
 - [ ] copy the whole directory with all the files
-- [ ] create additional directories
-- [ ] buy coffee
+- [ ] prompt for new Classes and new Executable
+- [ ] treat myself to a coffee!
 
 
 ## 🌱 Useful knowledge for scripting

@@ -13,4 +13,6 @@ cp -r $olddir $newdir
 
 cd $newdir
 
+count=1
 
+for
