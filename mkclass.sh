@@ -9,7 +9,7 @@ cd $directory
 read 'input?Name of Classes: '
 
 classes=(${=input})
-amount=${#classes}
+# amount=${#classes}
 
 sources=''
 for class in $classes; do

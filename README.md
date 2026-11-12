@@ -14,6 +14,31 @@
 
 In this directory I'm scripting my first zsh script and documenting my journey in this Markdown file. It's mainly for the C++ Projects of my school, namely the CPP Modules. This also works for Python Modules if you tweak a couple of things, alltough I recommend for both Curriculums to first go through the pain of making the directories, creating the files, writing classes and their headers etc by hand until you are truly and utterly sick of it.
 
+## 🌱 What the script does
+
+### 🗃 mkclass
+
+It does a lot of things:
+- asks user to input directory, class and executable names
+- creates a directory
+- creates classes with both .cpp _and_ .hpp files
+- creates main.cpp
+- crreates Makefile
+- creates a Color.hpp (I love an LSD infused terminal!)
+
+we're not done yet!
+- every single file has my own custom header which you can change or remove to your liking!
+- fills .hpp class files with include guards tailored to the class and adds iostream and string libraries (and Color.hpp), as well as a Class template with all the constructors
+- fills .cpp class files with the respected class header as well as the constructor declarations
+- fills main.cpp with all the custom class headers (and Color.cpp) 
+- fills the Makefile with all the basic neccessities and inputs the executable name as well as the .cpp files for you, so it's 100% ready to go if you're going for the standard minimal Makefile
+
+
+
+### 🧬 cpyclass
+
+_coming soon..._
+
 ## 🌱 How to use the script
 
 _coming soon..._
