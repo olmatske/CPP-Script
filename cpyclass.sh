@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-read "newdir?Name of Directory: "
+read "newd?Name of Directory: "
 
 read "olddir?Input Directory to be copied from: "
 
@@ -8,11 +8,26 @@ read "class?Input new Classes: "
 
 read "exec?Name of the Executable: "
 
+newdir=(${=newd})
+amount=${#class}
 
-cp -r $olddir $newdir
 
-cd $newdir
 
-count=1
 
-for
+
+
+
+
+
+
+if (( amount == 0 )); then
+	cp -R "$olddir" "$newdir" || exit 1
+	echo "Copied the directory without adding Classes"
+else
+	cp -r $olddir $newdir
+	cd $newdir
+	
+fi
+
+
+

@@ -128,13 +128,13 @@ EOF
 
 # //////////////////////////////////////////////////////////////////////////////
 function fill_Makefile() {
- 
+# if Makefile is not empty, empty it beforehand and append?
 	cat >> Makefile << EOF
 NAME = ${executable}
 CXX = c++
 FLAGS = -Wall -Werror -Wextra -std=c++17
 
-SRC = ${sources}
+SRC = main.cpp ${sources}
 OBJ = \$(SRC:.cpp=.o)
 
 all: \$(NAME)
