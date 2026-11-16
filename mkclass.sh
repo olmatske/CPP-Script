@@ -60,35 +60,36 @@ EOF
 function cpp_includes() {
 
 	local class="$1"
-	local guard="${(U)class}_HPP"
+	local guard=${(U)class}_HPP
 
 	cat  >> "${class}.cpp" << EOF
 #include "${classes[count]}.hpp"
 
-${class}::${class}() : type("${class}") {
-	std::cout << G << "${class} default constructor called" << R << std::endl;
+${class}::${class}() {
+	std::cout << M << "Default constructor called" << R << std::endl;
 }
 
-${class}::${class}( std::string type ) : type(type) {
-	std::cout << G << "${class} parametarized constructor called" << R << std::endl;
+${class}::${class}( std::string name ) : _name(name) {
+	std::cout << M << "Parameterizes constructor called" << R << std::endl;
 }
 
-${class}::${class}( const ${class} &other ) : type(other.type) {
-	std::cout << G << "${class} copy constructor called" << R << std::endl;
-	this->type = other.type;
+${class}::${class}( const ${class} &other ) : _name(other._name) {
+	std::cout << M << "Copy constructor called" << R << std::endl;
+	this->_name = other._name;
 }
 
 ${class} &${class}::operator=( const ${class} &other ) {
-	std::cout << G << "${class} assignment operator called" << R << std::endl;
+	std::cout << M << "Copy assignment operator called" << R << std::endl;
 	if (this != &other) {
-		this->type = other.type;
+		this->_name = other._name;
 	}
 	return (*this);
 }
 
-${class}::~${class}() {
-	std::cout << G << "${class} Destructor called" << R << std::endl;
+${class}::~${class}(){
+	std::cout << M << "Destructor called" << R << std::endl;
 }
+
 
 EOF
 
@@ -100,17 +101,23 @@ EOF
 #include <iostream>
 #include <string>
 
-#endif
-
 class ${class} {
+
+	private:
+		std::string _name = "Bob";
 
 	public:
 		${class}();
 		${class}( std::string type );
 		${class}( const ${class} &other );
 		${class}& operator=( const ${class} &other );
+		~${class};
 
 };
+
+
+
+#endif
 
 EOF
 }
@@ -160,8 +167,8 @@ EOF
 
 function fill_Colors() {
 	cat >> Colors.hpp << EOF
-#ifndef "COLORS_HPP"
-#define "COLORS_HPP"
+#ifndef COLORS_HPP
+#define COLORS_HPP
 
 #include <string>
 
