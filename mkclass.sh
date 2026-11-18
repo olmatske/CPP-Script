@@ -199,7 +199,6 @@ put_header "Colors.hpp"
 put_header "main.cpp"
 put_header "Makefile"
 fill_Makefile
-echo '#include "Colors.hpp"' >> main.cpp
 
 while ((count <= amount)); do
 	touch ${classes[count]}.cpp
