@@ -61,9 +61,10 @@ _coming soon..._
 
 ### ./cpydir
 
-- [ ] copy the whole directory with all the files
-- [ ] prompt for new Classes and new Executable
+- [X] copy the whole directory with all the files
+- [X] prompt for new Classes and new Executable
 - [ ] treat myself to a coffee!
+- [ ] added headers slip to the bottom in main.cpp! Needs to go up!
 
 
 ## 🌱 Useful knowledge for scripting
